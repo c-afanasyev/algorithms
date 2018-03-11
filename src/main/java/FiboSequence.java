@@ -14,11 +14,13 @@ public class FiboSequence {
         arrayOfFiboNumbers.add(1);
         arrayOfFiboNumbers.add(1);
 
-        if (finalFiboNumber == 1){
-            Integer[] array = new Integer[arrayOfFiboNumbers.size()];
-            return arrayOfFiboNumbers.toArray(array);
+        if (finalFiboNumber == 0){
+            return new Integer[] {0};
         }
 
+        if (finalFiboNumber == 1){
+            return new Integer[] {1,1};
+        }
 
         while (last<=finalFiboNumber){
             last = first+second;

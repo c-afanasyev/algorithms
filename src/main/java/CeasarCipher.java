@@ -13,7 +13,7 @@ public class CeasarCipher {
             if (Character.isLowerCase(stringAsCharArray[i]))
                 stringAsCharArray[i] = (char)(((stringAsCharArray[i]-('a'-1) + shift) % 26 ) + ('a'-1));
 
-            //i.e. if (Character.isUpperCase(ch))
+            //i.e. if (Character.isUpperCase(stringAsCharArray[i]))
             else
                 stringAsCharArray[i] = (char)(((stringAsCharArray[i]-('A'-1) + shift) % 26 ) + ('A'-1));
         }

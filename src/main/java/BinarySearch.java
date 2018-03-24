@@ -12,13 +12,13 @@ public class BinarySearch {
         int middle = (first + last) / 2;
 
         while (first <= last){
-            if (array[middle] == search)
+            if (search == array[middle])
                 return middle;
 
-            else if (array[middle] < search)
+            else if (search > array[middle])
                 first = middle + 1;
 
-            //i.e. if (array[middle] > search)
+            //i.e. if (search < array[middle])
             else
                 last = middle - 1;
 

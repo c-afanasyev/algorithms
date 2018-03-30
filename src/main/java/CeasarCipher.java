@@ -1,8 +1,4 @@
 public class CeasarCipher {
-    public static void main(String[] args) {
-        System.out.println(CeasarCipher.cipher("abcdef", 1));
-    }
-
     public static String cipher(String string, int shift){
         if (shift < 0)
             shift = (shift % 26) + 26;

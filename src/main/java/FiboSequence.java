@@ -2,11 +2,6 @@ import java.util.ArrayList;
 import java.util.stream.Stream;
 
 public class FiboSequence {
-
-    public static void main(String[] args) {
-        Stream.of(FiboSequence.getFiboSequence(22)).forEach(n -> System.out.print(n + ", "));
-    }
-
     public static Integer[] getFiboSequence(int finalFiboNumber){
         int first=1, second=1, last=0;
 

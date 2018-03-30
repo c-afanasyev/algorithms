@@ -1,10 +1,6 @@
 import java.util.Arrays;
 
 public class BinarySearch {
-    public static void main(String[] args) {
-        System.out.println(binarySearch(new int[] {0,1,2,3,5,7,12,25,77,32}, 32));
-    }
-
     public static int binarySearch(int[] array, final int search){
         Arrays.sort(array);
         int first = 0;
